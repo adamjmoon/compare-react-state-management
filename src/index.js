@@ -7,4 +7,4 @@ import ReduxTodoApp from "./redux"
 import ContextTodoApp from "./context"
 
 // NOTE: TodoApps are interchangeable
-ReactDOM.render(<ApolloTodoApp />, document.getElementById("root"))
+ReactDOM.render(<ContextTodoApp />, document.getElementById("root"))
