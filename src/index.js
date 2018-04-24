@@ -2,7 +2,6 @@ import "./index.css"
 import React from "react"
 import ReactDOM from "react-dom"
 import ApolloTodoApp from "./apollo"
-import MobxTodoApp from "./mobx"
 import ReduxTodoApp from "./redux"
 import ContextTodoApp from "./context"
 
