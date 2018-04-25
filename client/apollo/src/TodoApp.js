@@ -1,11 +1,15 @@
 import React from "react"
 import { graphql } from "react-apollo"
-import { TODOS_QUERY } from "react-todo-core/queries"
+import { TODOS_QUERY } from "react-todo-core"
 import VisibleTodoList from "./VisibleTodoList"
 import FilterLink from "./FilterLink"
 import AddTodo from "./AddTodo"
 
 const TodoApp = props => {
+
+
+  console.log(TODOS_QUERY);
+  
   if (props.error) {
     return "An unexpected error occurred"
   }

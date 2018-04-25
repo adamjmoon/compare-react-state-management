@@ -1,10 +1,10 @@
 import { compose, graphql } from "react-apollo"
-import { TODOS_QUERY } from "react-todo-core/queries"
-import { CLEAR_TODO_MUTATION } from "react-todo-core/mutations"
-import { TOGGLE_TODO_MUTATION } from "react-todo-core/mutations"
+import { TODOS_QUERY } from "react-todo-core"
+import { CLEAR_TODO_MUTATION } from "react-todo-core"
+import { TOGGLE_TODO_MUTATION } from "react-todo-core"
 import { VISIBILITY_FILTER_QUERY } from "./clientVisibility"
-import { getVisibleTodos } from "react-todo-core/selectors"
-import { TodoList } from "react-todo-core/components"
+import { getVisibleTodos } from "react-todo-core"
+import { TodoList } from "react-todo-core"
 
 const VisibleTodoList = compose(
   graphql(VISIBILITY_FILTER_QUERY, {

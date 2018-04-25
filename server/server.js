@@ -26,12 +26,12 @@ app.use(
   })
 )
 
-app.listen(process.env.PORT || 8080, err => {
+app.listen(process.env.PORT || 8081, err => {
   if (err) {
     console.error(err)
     return
   }
   console.log(
-    `GraphQL Server is now running on localhost:${process.env.PORT || 8080}`
+    `GraphQL Server is now running on localhost:${process.env.PORT || 8081}`
   )
 })

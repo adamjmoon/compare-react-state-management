@@ -24,11 +24,8 @@
     "state management",
     "state"
   ],
-  "author": "robertgonzales",
+  "author": "adamjmoon",
   "license": "ISC",
-  "devDependencies": {
-    "react-scripts": "0.7.0"
-  },
   "dependencies": {
     "concurrently": "3.5.1",
     "express": "^4.13.3",
@@ -39,7 +36,7 @@
   },
   "scripts": {
     "start":
-      "concurrently \"react-scripts start\" \"node ./server/server.js\" ",
+      "concurrently \"lerna exec --scope=react-todo-core -- yarn build && lerna exec --scope=apollo -- yarn start \" \"node ./server/server.js\" ",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

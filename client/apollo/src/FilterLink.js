@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import { compose, graphql } from "react-apollo"
 import { VISIBILITY_FILTER_QUERY } from "./clientVisibility"
 import { VISIBILITY_FILTER_MUTATION } from "./clientVisibility"
-import { Link } from "react-todo-core/components"
+import { Link } from "react-todo-core"
 
 const FilterLink = compose(
   graphql(VISIBILITY_FILTER_QUERY, {

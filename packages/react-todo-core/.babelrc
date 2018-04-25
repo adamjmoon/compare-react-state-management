@@ -1,0 +1,40 @@
+{
+  "plugins": ["transform-object-rest-spread","transform-es2015-modules-commonjs"],
+  "env": {
+    "development": {
+      "presets": [
+        "react-app-no-regenerator",
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 Chrome versions"]
+            },
+            "exclude": ["transform-regenerator"],
+            "modules": false,
+            "loose": true,
+            "debug": true
+          }
+        ]
+      ]
+    },
+    "test": {
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-class-properties"
+      ]
+    },
+    "production": {
+      "presets": ["@babel/preset-react",
+          ["@babel/preset-env", {
+            "targets": {
+              "esmodules": true
+            }
+          }]
+        ],
+      "plugins": [
+        "transform-class-properties"
+      ]
+    }
+  }
+}

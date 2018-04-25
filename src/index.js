@@ -1,9 +1,0 @@
-import "./index.css"
-import React from "react"
-import ReactDOM from "react-dom"
-import ApolloTodoApp from "./apollo"
-import ReduxTodoApp from "./redux"
-import ContextTodoApp from "./context"
-
-// NOTE: TodoApps are interchangeable
-ReactDOM.render(<ContextTodoApp />, document.getElementById("root"))

@@ -1,7 +1,7 @@
 import { graphql } from "react-apollo"
-import { TODOS_QUERY } from "react-todo-core/queries"
-import { ADD_TODO_MUTATION } from "react-todo-core/mutations"
-import { Input } from "react-todo-core/components"
+import { TODOS_QUERY } from "react-todo-core"
+import { ADD_TODO_MUTATION } from "react-todo-core"
+import { Input } from "react-todo-core"
 
 const AddTodo = graphql(ADD_TODO_MUTATION, {
   // map mutation to props

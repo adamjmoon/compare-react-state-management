@@ -1,0 +1,23 @@
+0 silly input [ 'yarn', 'start' ]
+1 silly flags { _: [ 'exec' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   scope: 'client/apollo',
+1 silly flags   command: 'yarn',
+1 silly flags   args: [ 'start' ] }
+2 verbose rootPath C:\react\compare-react-state-management
+3 info version 2.11.0
+4 silly existsSync C:\react\compare-react-state-management\VERSION
+5 info versioning independent
+6 info scope client/apollo
+7 error EPACKAGES Errored while collecting packages and package graph
+8 error Error: No packages found that match scope 'client/apollo'
+8 error     at Function.filterPackages (C:\react\compare-react-state-management\node_modules\lerna\lib\PackageUtilities.js:252:17)
+8 error     at ExecCommand.runPreparations (C:\react\compare-react-state-management\node_modules\lerna\lib\Command.js:333:60)
+8 error     at C:\react\compare-react-state-management\node_modules\lerna\lib\Command.js:209:18
+8 error     at new Promise (<anonymous>)
+8 error     at ExecCommand.run (C:\react\compare-react-state-management\node_modules\lerna\lib\Command.js:193:14)
+8 error     at Object.handler (C:\react\compare-react-state-management\node_modules\lerna\lib\commands\ExecCommand.js:45:14)
+8 error     at Object.self.runCommand (C:\react\compare-react-state-management\node_modules\lerna\node_modules\yargs\lib\command.js:233:22)
+8 error     at Object.Yargs.self._parseArgs (C:\react\compare-react-state-management\node_modules\lerna\node_modules\yargs\yargs.js:990:30)
+8 error     at Object.Yargs.self.parse (C:\react\compare-react-state-management\node_modules\lerna\node_modules\yargs\yargs.js:532:23)
